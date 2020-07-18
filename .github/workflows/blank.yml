@@ -36,7 +36,7 @@ jobs:
         cat test1.txt
         echo "test" > test2.txt
         git add .
-        git commit -m 'Pruebas'
+        git commit --allow-empty -m 'Pruebas S'
         git push
         
 
