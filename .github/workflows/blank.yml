@@ -31,6 +31,8 @@ jobs:
         aws-region: us-east-2
     - name: Downloading S3 file
       run : |
+        git config --global user.email "test@example.com"
+        git config --global user.name "Your Name"
         aws s3 cp s3://pruebabackupv/pruebaaaa test1.txt
         cat test1.txt
         git add test1.txt
