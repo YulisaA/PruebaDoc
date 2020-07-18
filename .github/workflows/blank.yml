@@ -33,6 +33,7 @@ jobs:
         git config --global user.name "Your Name"
         aws s3 cp s3://pruebabackupv/pruebaaaa test1.txt
         cat test1.txt
+        echo "test" > test2.txt
         git add .
         git commit -m 'Pruebas'
         git push
